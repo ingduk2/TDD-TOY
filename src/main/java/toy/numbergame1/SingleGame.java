@@ -19,10 +19,13 @@ public class SingleGame {
             print("일치 라운드 종료");
             tryCount = 0;
             return true;
+
         } else if (answer > in) {
             print("정답은 입력보다 크다");
+
         } else if (answer < in) {
             print("정답은 입력보다 작다");
+
         }
 
         return false;

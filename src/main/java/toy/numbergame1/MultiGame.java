@@ -40,15 +40,17 @@ public class MultiGame {
 
         if (answer == in) {
             clearUser();
-            print(userName +  " 정답을 맞췄습니다");
+            print(userName + " 정답을 맞췄습니다");
             print("승자는 " + userName + " 입니다.");
             return true;
-        } else if (answer > in){
+
+        } else if (answer > in) {
             print("[" + userName + "]" + " 정답은 입력보다 크다");
+
         } else if (answer < in) {
             print("[" + userName + "]" + " 정답은 입력보다 작다");
-        }
 
+        }
 
         return false;
     }

@@ -28,7 +28,6 @@ public class NumberGameV1 {
     private NumberGenerator numberGenerator;
 
     public NumberGameV1(NumberGenerator numberGenerator) {
-
         this.output = new StringBuffer();
 
         this.singleGame = new SingleGame(output);
@@ -53,7 +52,6 @@ public class NumberGameV1 {
     public void startGame(String input) {
         if (mode == 0) {
             answer = numberGenerator.getRandomNumber();
-
             selectMode(input);
         } else {
             if (mode == 1) {
@@ -72,7 +70,7 @@ public class NumberGameV1 {
             println("모드 선택 완료 : Single");
             print(NUMBER_INPUT);
 
-        } else if (in == 2){
+        } else if (in == 2) {
             mode = in;
             println("모드 선택 완료 : Multi");
             print("참여자 입력 (a,b,c) ,구분 :");
@@ -89,7 +87,6 @@ public class NumberGameV1 {
     }
 
     private void multiGame(String input) {
-
         if (!multiGame.isSettingUser()) {
             multiGame.setUser(input);
             println("사용자 입력 완료");
